@@ -64,8 +64,8 @@ class App extends Component {
             <
             h1 > Today I Learned < /h1> <
             i className = "fa fa-shopping-basket"
-            aria - hidden = "true" > < /i>                <
-            /div> <
+            aria - hidden = "true" > < /i>                < /
+            div > <
             /header> <
             div className = 'container' >
             <
@@ -85,8 +85,8 @@ class App extends Component {
             onChange = { this.handleChange }
             value = { this.state.currentItem }
             /> <
-            button > Add Item < /button> <
-            /form> <
+            button > Add Item < /button> < /
+            form > <
             /section> <
             section className = 'display-item' >
             <
@@ -98,18 +98,19 @@ class App extends Component {
                         li key = { item.id } >
                         <
                         h3 > { item.title } < /h3> <
-                        p > brought by: < strong > { item.user } < /strong> <
+                        p > learned by: < strong > { item.user } < /strong> <
                         button onClick = {
-                            () => this.removeItem(item.id) } > Remove Item < /button> <
-                        /p> <
+                            () => this.removeItem(item.id)
+                        } > Remove Item < /button> < /
+                        p > <
                         /li>
                     )
                 })
             } <
-            /ul> <
-            /div> <
-            /section> <
-            /div> <
+            /ul> < /
+            div > <
+            /section> < /
+            div > <
             /div>
         );
     }
